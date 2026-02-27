@@ -3,76 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Face Test</title>
+    <title>Animal Face Test - AI Dog or Cat Classifier</title>
+    <meta name="description" content="Use our AI-powered Animal Face Test to classify photos of dogs and cats. High-quality machine learning classification directly in your browser.">
     <meta name="google-adsense-account" content="ca-pub-1220482067075845">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1220482067075845" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="nav-header">
-            <a href="lotto.html" class="nav-link">🍀 Lotto</a>
+        <header class="nav-header">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">🐾 Animal Test</a>
+                <a href="lotto.html" class="nav-link">🍀 Lotto</a>
+                <a href="about.html" class="nav-link">ℹ️ About</a>
+            </div>
             <button class="theme-toggle" id="theme-toggle">🌙</button>
-        </div>
-        <h1>Animal Face Test</h1>
-        <p class="subtitle">AI-powered Dog or Cat face classifier</p>
-        
-        <div class="test-area">
-            <div class="file-upload">
-                <input type="file" id="image-upload" accept="image/*" onchange="handleImageUpload(event)" hidden>
-                <button type="button" id="upload-btn" onclick="document.getElementById('image-upload').click()">Upload Image</button>
-            </div>
-            <div id="image-container">
-                <img id="face-image" src="" alt="Your uploaded image will appear here" style="display: none;">
-            </div>
-            <div id="label-container"></div>
-        </div>
+        </header>
 
-        <div class="divider"></div>
-
-        <section class="inquiry-section">
-            <h2>Partnership Inquiry</h2>
-            <form action="https://formspree.io/f/mdaljnar" method="POST" id="inquiry-form">
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email Address" required>
+        <main>
+            <h1>Animal Face Test</h1>
+            <p class="subtitle">AI-powered Dog or Cat face classifier</p>
+            
+            <section class="test-area">
+                <div class="content-block">
+                    <h2>How to Use</h2>
+                    <p>Simply upload a clear photo of your pet below. Our advanced AI will analyze the features and predict whether it's a Dog or a Cat!</p>
                 </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="How can we help you?" required></textarea>
+
+                <div class="file-upload">
+                    <input type="file" id="image-upload" accept="image/*" onchange="handleImageUpload(event)" hidden>
+                    <button type="button" id="upload-btn" onclick="document.getElementById('image-upload').click()">Upload Image</button>
                 </div>
-                <button type="submit" id="submit-btn">Send Inquiry</button>
-            </form>
-        </section>
+                <div id="image-container">
+                    <img id="face-image" src="" alt="Your uploaded image will appear here" style="display: none;">
+                </div>
+                <div id="label-container"></div>
+            </section>
 
-        <div class="divider"></div>
+            <div class="divider"></div>
 
-        <section class="comment-section">
-            <h2>Comments</h2>
-            <div id="disqus_thread"></div>
-            <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://mactest260227.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </section>
+            <section class="info-section">
+                <h2>Why Use Our AI Test?</h2>
+                <p>We use TensorFlow.js and a model trained with Teachable Machine to provide high-quality predictions directly in your browser. Your data privacy is important to us: **No images are uploaded to our servers.** Everything is processed locally.</p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="inquiry-section">
+                <h2>Contact & Inquiry</h2>
+                <form action="https://formspree.io/f/mdaljnar" method="POST" id="inquiry-form">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn">Send Inquiry</button>
+                </form>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="comment-section">
+                <h2>Community Feedback</h2>
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://mactest260227.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="about.html">About Us</a>
+            </div>
+            <p>&copy; 2026 AI & Lotto Tools. All rights reserved.</p>
+        </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script type="text/javascript">
         const URL = "https://teachablemachine.withgoogle.com/models/3V6EIIr9RM/";
-
         let model, labelContainer, maxPredictions;
 
         async function init() {
@@ -110,10 +129,8 @@
 
         async function handleImageUpload(event) {
             if (!model) await init();
-            
             const file = event.target.files[0];
             if (!file) return;
-
             const reader = new FileReader();
             reader.onload = async function(e) {
                 const img = document.getElementById("face-image");
@@ -130,15 +147,12 @@
             for (let i = 0; i < maxPredictions; i++) {
                 const classPrediction = prediction[i].className;
                 const probability = (prediction[i].probability * 100).toFixed(0) + "%";
-                
                 const barContainer = labelContainer.childNodes[i];
                 barContainer.querySelector(".label-name").innerHTML = classPrediction;
                 barContainer.querySelector(".progress-bar").style.width = probability;
                 barContainer.querySelector(".label-percent").innerHTML = probability;
             }
         }
-
-        // Initialize model on load
         init();
     </script>
     <script src="main.js"></script>

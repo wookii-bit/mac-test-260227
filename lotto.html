@@ -3,55 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Lotto Number Generator - Lucky Number Picker</title>
+    <meta name="description" content="Generate your lucky numbers with our fair and random Lotto Number Generator. Pick 6 numbers easily for your next lottery ticket.">
     <meta name="google-adsense-account" content="ca-pub-1220482067075845">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1220482067075845" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="nav-header">
-            <a href="index.html" class="nav-link">🐾 Animal Test</a>
+        <header class="nav-header">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">🐾 Animal Test</a>
+                <a href="lotto.html" class="nav-link active">🍀 Lotto</a>
+                <a href="about.html" class="nav-link">ℹ️ About</a>
+            </div>
             <button class="theme-toggle" id="theme-toggle">🌙</button>
-        </div>
-        <h1>Lotto Number Generator</h1>
-        <p class="subtitle">Generate your lucky numbers!</p>
-        
-        <div class="test-area">
-            <div class="lotto-display"></div>
-            <button id="generate-btn">Generate Numbers</button>
-        </div>
+        </header>
 
-        <div class="divider"></div>
-
-        <section class="inquiry-section">
-            <h2>Partnership Inquiry</h2>
-            <form action="https://formspree.io/f/mdaljnar" method="POST" id="inquiry-form">
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email Address" required>
+        <main>
+            <h1>Lotto Number Generator</h1>
+            <p class="subtitle">Pick your lucky 6 numbers for today!</p>
+            
+            <section class="test-area">
+                <div class="content-block">
+                    <h2>How to Use</h2>
+                    <p>Ready to try your luck? Click the "Generate Numbers" button to receive 6 unique numbers between 1 and 45. Each number is chosen using a fair and random algorithm.</p>
                 </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="How can we help you?" required></textarea>
-                </div>
-                <button type="submit" id="submit-btn">Send Inquiry</button>
-            </form>
-        </section>
 
-        <div class="divider"></div>
+                <div class="lotto-display"></div>
+                <button id="generate-btn">Generate Numbers</button>
+            </section>
 
-        <section class="comment-section">
-            <h2>Comments</h2>
-            <div id="disqus_thread"></div>
-            <script>
-                (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://mactest260227.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </section>
+            <div class="divider"></div>
+
+            <section class="info-section">
+                <h2>Our Lucky Picker</h2>
+                <p>Picking numbers can be hard. Our Lotto Generator helps by providing a set of random numbers you can use for inspiration or for your next lottery ticket. We use JavaScript's built-in cryptographic-strength random number functions where possible to ensure fair selection.</p>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="inquiry-section">
+                <h2>Contact & Inquiry</h2>
+                <form action="https://formspree.io/f/mdaljnar" method="POST" id="inquiry-form">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn">Send Inquiry</button>
+                </form>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="comment-section">
+                <h2>Community Feedback</h2>
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://mactest260227.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="about.html">About Us</a>
+            </div>
+            <p>&copy; 2026 AI & Lotto Tools. All rights reserved.</p>
+        </footer>
     </div>
     <script src="lotto.js"></script>
 </body>
