@@ -61,6 +61,63 @@ h1 {
     color: var(--primary-color);
 }
 
+/* Divider and Form Styles */
+.divider {
+    height: 2px;
+    background: var(--shadow-color);
+    margin: 40px 0;
+    border-radius: 2px;
+}
+
+.inquiry-section h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--shadow-color);
+    border-radius: 8px;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color var(--transition-speed);
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#submit-btn:hover {
+    opacity: 0.9;
+}
+
 .lotto-display {
     display: flex;
     justify-content: center;
