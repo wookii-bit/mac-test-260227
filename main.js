@@ -1,5 +1,27 @@
 const generateBtn = document.getElementById('generate-btn');
+const themeToggle = document.getElementById('theme-toggle');
 const lottoDisplay = document.querySelector('.lotto-display');
+
+// Check for saved theme
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+    document.body.classList.add(currentTheme);
+    themeToggle.textContent = currentTheme === 'dark-mode' ? '☀️' : '🌙';
+}
+
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    let theme = 'light-mode';
+    if (document.body.classList.contains('dark-mode')) {
+        theme = 'dark-mode';
+        themeToggle.textContent = '☀️';
+    } else {
+        themeToggle.textContent = '🌙';
+    }
+    
+    localStorage.setItem('theme', theme);
+});
 
 const generateNumbers = () => {
     lottoDisplay.innerHTML = '';
