@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Face Test - AI Dog or Cat Classifier</title>
-    <meta name="description" content="Use our AI-powered Animal Face Test to classify photos of dogs and cats. High-quality machine learning classification directly in your browser.">
+    <title>동물상 테스트 - AI 강아지상 고양이상 구분</title>
+    <meta name="description" content="인공지능(AI)을 이용한 동물상 테스트입니다. 사진을 업로드하여 내가 강아지상인지 고양이상인지 확인해보세요. 브라우저 내에서 안전하게 처리됩니다.">
     <meta name="google-adsense-account" content="ca-pub-1220482067075845">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1220482067075845" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -13,29 +13,30 @@
     <div class="container">
         <header class="nav-header">
             <div class="nav-links">
-                <a href="index.html" class="nav-link active">🐾 Animal Test</a>
-                <a href="lotto.html" class="nav-link">🍀 Lotto</a>
-                <a href="about.html" class="nav-link">ℹ️ About</a>
+                <a href="index.html" class="nav-link active">🐾 동물상 테스트</a>
+                <a href="lotto.html" class="nav-link">🍀 로또 번호</a>
+                <a href="blog.html" class="nav-link">📚 심리학 블로그</a>
+                <a href="about.html" class="nav-link">ℹ️ 소개</a>
             </div>
             <button class="theme-toggle" id="theme-toggle">🌙</button>
         </header>
 
         <main>
-            <h1>Animal Face Test</h1>
-            <p class="subtitle">AI-powered Dog or Cat face classifier</p>
+            <h1>동물상 테스트</h1>
+            <p class="subtitle">인공지능이 분석하는 나의 강아지상/고양이상 점수</p>
             
             <section class="test-area">
                 <div class="content-block">
-                    <h2>How to Use</h2>
-                    <p>Simply upload a clear photo of your pet below. Our advanced AI will analyze the features and predict whether it's a Dog or a Cat!</p>
+                    <h2>사용 방법</h2>
+                    <p>본인의 얼굴이 잘 나온 사진을 아래에 업로드해 주세요. 고도화된 AI가 이목구비를 분석하여 강아지상인지 고양이상인지 예측해 드립니다!</p>
                 </div>
 
                 <div class="file-upload">
                     <input type="file" id="image-upload" accept="image/*" onchange="handleImageUpload(event)" hidden>
-                    <button type="button" id="upload-btn" onclick="document.getElementById('image-upload').click()">Upload Image</button>
+                    <button type="button" id="upload-btn" onclick="document.getElementById('image-upload').click()">사진 업로드하기</button>
                 </div>
                 <div id="image-container">
-                    <img id="face-image" src="" alt="Your uploaded image will appear here" style="display: none;">
+                    <img id="face-image" src="" alt="업로드한 사진이 여기에 표시됩니다" style="display: none;">
                 </div>
                 <div id="label-container"></div>
             </section>
@@ -43,29 +44,29 @@
             <div class="divider"></div>
 
             <section class="info-section">
-                <h2>Why Use Our AI Test?</h2>
-                <p>We use TensorFlow.js and a model trained with Teachable Machine to provide high-quality predictions directly in your browser. Your data privacy is important to us: **No images are uploaded to our servers.** Everything is processed locally.</p>
+                <h2>왜 이 테스트를 사용해야 하나요?</h2>
+                <p>본 테스트는 TensorFlow.js와 Teachable Machine으로 학습된 모델을 사용하여 브라우저에서 직접 분석을 수행합니다. **이미지가 서버로 전송되지 않아 개인정보가 안전하게 보호됩니다.** 모든 과정은 사용자의 기기 내에서 로컬로 처리됩니다.</p>
             </section>
 
             <div class="divider"></div>
 
             <section class="inquiry-section">
-                <h2>Contact & Inquiry</h2>
+                <h2>제휴 및 문의</h2>
                 <form action="https://formspree.io/f/mdaljnar" method="POST" id="inquiry-form">
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <input type="email" name="email" placeholder="이메일 주소를 입력하세요" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="How can we help you?" required></textarea>
+                        <textarea name="message" placeholder="궁금한 점이나 의견을 남겨주세요" required></textarea>
                     </div>
-                    <button type="submit" id="submit-btn">Send Inquiry</button>
+                    <button type="submit" id="submit-btn">문의 보내기</button>
                 </form>
             </section>
 
             <div class="divider"></div>
 
             <section class="comment-section">
-                <h2>Community Feedback</h2>
+                <h2>커뮤니티 댓글</h2>
                 <div id="disqus_thread"></div>
                 <script>
                     (function() {
@@ -75,16 +76,16 @@
                     (d.head || d.body).appendChild(s);
                     })();
                 </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <noscript>Disqus 댓글을 확인하려면 자바스크립트를 활성화해주세요.</noscript>
             </section>
         </main>
 
         <footer>
             <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a> | 
-                <a href="about.html">About Us</a>
+                <a href="privacy.html">개인정보처리방침</a> | 
+                <a href="about.html">사이트 소개</a>
             </div>
-            <p>&copy; 2026 AI & Lotto Tools. All rights reserved.</p>
+            <p>&copy; 2026 AI & 로또 도구. All rights reserved.</p>
         </footer>
     </div>
 
@@ -145,7 +146,10 @@
             const img = document.getElementById("face-image");
             const prediction = await model.predict(img);
             for (let i = 0; i < maxPredictions; i++) {
-                const classPrediction = prediction[i].className;
+                let classPrediction = prediction[i].className;
+                if (classPrediction === "Dog") classPrediction = "강아지상";
+                if (classPrediction === "Cat") classPrediction = "고양이상";
+                
                 const probability = (prediction[i].probability * 100).toFixed(0) + "%";
                 const barContainer = labelContainer.childNodes[i];
                 barContainer.querySelector(".label-name").innerHTML = classPrediction;
